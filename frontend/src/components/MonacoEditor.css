@@ -26,7 +26,18 @@ border: 1px solid black;
 padding: 1rem 4rem;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 350px) {
+    .result-header th {
+    padding: 0.7rem 0.3rem;
+    font-size: 9px;
+   }
+   .result-data td {
+    padding: 0.7rem 0.3rem;
+    font-size: 9px;
+   }
+}
+
+@media(max-width: 500px) and (min-width: 350px) {
     .result-header th {
     padding: 1em 0.3rem;
     font-size: small;

@@ -113,3 +113,12 @@ background-color: rgb(254, 254, 240);
     width: 20%;
 }
 }
+
+@media(max-width: 360px) {
+    .assignments-body {
+        margin: 1rem 0.3rem 5rem;
+    }
+    .assignments-header {
+    font-size: 10px;
+}
+}

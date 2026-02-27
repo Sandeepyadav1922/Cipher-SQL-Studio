@@ -31,7 +31,21 @@ body {
     border: 2px solid pink;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 360px) {
+   .table-header th {
+    padding: 0.6rem 0.2rem;
+    font-size: 9px;
+   }
+   .table-data td {
+    padding: 0.6rem 0.2rem;
+    font-size: 9px;
+   }
+   .table-container {
+    margin: 0.5rem;
+   }
+}
+
+@media(max-width: 500px) and (min-width: 360px) {
    .table-header th {
     padding: 1rem 0.2rem;
     font-size: small;

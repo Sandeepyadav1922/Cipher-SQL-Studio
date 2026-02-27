@@ -20,7 +20,7 @@ function SqlEditor({question}) {
         setStudentQuery("");
         } catch(err) {
             setResults([]);
-            setResultError("You have Entered Wrong Query");
+            setResultError(err.response.data.message);
             setStudentQuery(err.response.data.message);
         }
     }
