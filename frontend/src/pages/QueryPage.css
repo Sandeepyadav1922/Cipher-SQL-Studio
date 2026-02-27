@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: burlywood;
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.table-container h1 {
+    color: brown;
+}
+
+.table-header th{
+    background-color: aqua;
+    padding: 1rem 3rem;
+    border: 2px solid pink;
+}
+
+.table-data td {
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    padding: 1rem 3rem;
+    border: 2px solid pink;
+}
+
+@media(max-width: 500px) {
+   .table-header th {
+    padding: 1rem 0.2rem;
+    font-size: small;
+   }
+   .table-data td {
+    padding: 1rem 0.2rem;
+    font-size: 11px;
+   }
+}
+
+@media(max-width: 750px) and (min-width: 500px) {
+   .table-header th {
+    padding: 1rem 1rem;
+    font-size: small;
+   }
+   .table-data td {
+    padding: 1rem 1rem;
+    font-size: 11px;
+   }
+}
+
+@media(max-width: 950px) and (min-width: 750px) {
+   .table-header th {
+    padding: 1rem 2rem;
+    font-size: medium;
+   }
+   .table-data td {
+    padding: 1rem 2rem;
+    font-size: 11px;
+   }
+}
+
+.query-details {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.query-content {
+    background-color: bisque;
+    padding: 1rem;
+}
+
+span {
+    color: blue;
+}

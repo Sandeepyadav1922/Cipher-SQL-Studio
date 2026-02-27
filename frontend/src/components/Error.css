@@ -1,0 +1,27 @@
+.error {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.error-content {
+    background-color: rgb(218, 217, 217);
+    padding: 1.5rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media(max-width: 500px) {
+    .error-content {
+        width: 70%;
+    }
+}
+
+.error-btn {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}

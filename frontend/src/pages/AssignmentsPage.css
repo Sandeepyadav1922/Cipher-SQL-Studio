@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.assignments-container {
+    padding: 1rem;
+}
+
+.assignments-body {
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 500px) {
+    .assignments-body {
+        margin: 2rem 1rem;
+    }
+}
+
+.links {
+    text-decoration: none;
+}
+
+.main-container {
+    background-color: rgb(251, 202, 133);
+    padding: 1rem;
+    text-align: center;
+    font-size: larger;
+}
+
+.assignments-header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(222, 219, 199);
+    color: brown;
+    font-weight: 600;
+    padding: 0.7rem;
+    font-size: large;
+}
+
+.header-num {
+    width: 20%;
+}
+
+.header-title {
+    width: 50%;
+}
+
+.header-difficulty {
+    width: 30%;
+}
+
+.assignments{
+    display: flex;
+    padding: 0.7rem;
+}
+
+.links:nth-child(even) .assignments {
+background-color: rgb(222, 219, 199);
+}
+
+.links:nth-child(odd) .assignments {
+background-color: rgb(254, 254, 240);
+}
+
+.assignments div {
+    color: black;
+}
+
+.assignment-num {
+    width: 20%;
+}
+
+.assignment-title {
+    width: 50%;
+}
+
+.assignment-difficulty {
+    margin-left: 0.3rem;
+    width: 30%;
+}
+
+@media(max-width: 450px) {
+.assignments-container {
+    padding: 0;
+}
+.main-container {
+    font-size: 0.89rem;
+}
+.assignments-header {
+    font-size: small;
+}
+
+    .header-num {
+    width: 10%;
+}
+
+.header-title {
+    width: 70%;
+}
+
+.header-difficulty {
+    width: 20%;
+}
+    .assignment-num {
+    width: 10%;
+}
+
+.assignment-title {
+    width: 70%;
+}
+
+.assignment-difficulty {
+    width: 20%;
+}
+}
