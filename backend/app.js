@@ -6,7 +6,12 @@ const assignmentRouter = require("./routes/assignment");
 const queryRouter = require("./routes/query");
 const ExpressError = require("./utils/ExpressError");
 
-app.use(cors("http://localhost:5173/"));
+app.use(cors({
+    origin: [
+        "https://cipher-sql-studio-6f2j.onrender.com",
+        "http://localhost:5173/"
+    ]
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
