@@ -5,10 +5,11 @@ import "./AssignmentsPage.css";
 
 
 function AssignmentsPage() {
+    let API = import.meta.env.VITE_API_URL;
     let [assignments, setAssignments] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/assignments")
+        axios.get(`${API}/assignments`)
         .then((res) => {
             setAssignments(res.data);
         })

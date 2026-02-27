@@ -6,12 +6,13 @@ import SqlEditor from "../components/MonacoEditor";
 import "./QueryPage.css";
 
 function QueryPage() {
+    let API = import.meta.env.VITE_API_URL;
     let { id } = useParams();
     let [axiosError, setAxiosError] = useState({});
     let [assignment, setAssignment] = useState({});
 
     useEffect(() => {
-            axios.get(`http://localhost:5000/assignments/${id}`)
+            axios.get(`${API}/assignments/${id}`)
             .then((res) => {
                 setAxiosError({})
                 setAssignment(res.data);

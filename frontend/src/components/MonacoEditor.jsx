@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./MonacoEditor.css";
 
 function SqlEditor({question}) {
+    let API = import.meta.env.VITE_API_URL;
     let [query, setQuery] = useState();
     let [results, setResults] = useState([])
     let [studentQuery, setStudentQuery] = useState();
@@ -12,7 +13,7 @@ function SqlEditor({question}) {
 
     let handleSubmit = async () => {
         try {
-        let res = await axios.post("http://localhost:5000/sql", {query});
+        let res = await axios.post(`${API}/sql`, {query});
         setResults(res.data);
         setResultError("")
         setHint({})
@@ -26,7 +27,7 @@ function SqlEditor({question}) {
 
     let getHint = async () => {
         try {
-            let res =  await axios.post("http://localhost:5000/hint", {userQuery: studentQuery, question: question})
+            let res =  await axios.post(`${API}/hint`, {userQuery: studentQuery, question: question})
             setHint(res.data.message)
         } catch(err) {
             setHint(err.response.data.message)
