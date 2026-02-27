@@ -8,8 +8,8 @@ const ExpressError = require("./utils/ExpressError");
 
 app.use(cors({
     origin: [
+        "http://localhost:5173",
         "https://cipher-sql-studio-6f2j.onrender.com",
-        "http://localhost:5173/"
     ]
 }));
 
