@@ -11,7 +11,7 @@ function SqlEditor({question}) {
     let [resultError, setResultError] = useState();
     let [hint, setHint] = useState({});
 
-    let handleSubmit = async () => {
+    let runQuery = async () => {
         try {
         let res = await axios.post(`${API}/sql`, {query});
         setResults(res.data);
@@ -76,7 +76,7 @@ function SqlEditor({question}) {
         />
         </div>
         <div>
-        <button type="submit" onClick={handleSubmit}>Execute Query</button>
+        <button type="submit" onClick={runQuery}>Execute Query</button>
         {resultError && (
         <button type="submit" onClick={getHint}>Get Hint</button>
         )}
