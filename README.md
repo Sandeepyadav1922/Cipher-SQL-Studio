@@ -5,6 +5,12 @@
 
 The frontend communicates with the backend REST API for executing SQL queries and fetching assignments.
 
+## Project Demo Video
+
+A short demo video showcasing the project functionality:
+
+Unlisted YouTube Link: https://www.youtube.com/watch?v=usSVlU_PfU4
+
 ## Environment variables
 
 ### Backend (.env)
